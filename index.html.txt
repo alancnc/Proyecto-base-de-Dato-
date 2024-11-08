@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Datos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Logo en la parte superior derecha -->
+    <img src="https://i.ibb.co/ZcFZXMR/logo-misiones.jpg" alt="logo-misiones" id="logo">
+
+    <div id="formulario">
+        <h2>Ingresar Datos</h2>
+        <form id="formularioDatos">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" required>
+
+            <label for="celular">Número de Celular:</label>
+            <input type="text" id="celular" required>
+
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" required>
+
+            <label for="comedor">Comedor:</label>
+            <input type="text" id="comedor" required>
+
+            <button type="submit">Guardar Datos</button>
+        </form>
+    </div>
+
+    <div id="buscar">
+        <h2>Buscar Persona por DNI</h2>
+        <form id="formularioBusqueda">
+            <label for="dniBusqueda">DNI:</label>
+            <input type="text" id="dniBusqueda" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div id="resultadoBusqueda">
+            <h3>Datos de la Persona:</h3>
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
